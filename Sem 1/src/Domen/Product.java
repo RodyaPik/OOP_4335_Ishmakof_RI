@@ -58,4 +58,8 @@ public class Product { //классы
     ", cost=" + price +
     '}';
     }
+
+    public String getVolume() {
+        return null;
+    }
 }
