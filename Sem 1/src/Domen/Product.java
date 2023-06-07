@@ -1,12 +1,12 @@
 package Domen;
 
-public class Product {
+public class Product { //классы
     private int productId;
     private String productName;
     private String productCategory;
     private Double price;
 
-    public Product(int productId, String productName, String productCategory, double price) throws Exception{
+    public Product(int productId, String productName, String productCategory, double price) throws Exception{ //Конструктор заполнение
         this.productId = productId;
         this.productName = productName;
         this.productCategory = productCategory;
@@ -42,7 +42,7 @@ public class Product {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(double price) {    //проверка на цену
         if (price <= 0) {
             throw new IllegalStateException(String.format("Цена указана некорректно!", price));
         }
@@ -50,7 +50,7 @@ public class Product {
     }
 
     @Override
-    public String toString()
+    public String toString()    // переопределения класса, для корректного вывода
     {
         return "Product{" +
     "name='" + productName +'\'' +
